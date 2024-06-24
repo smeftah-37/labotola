@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the entire scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 10px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle when hovered */
+}
+
+/* Corner where both horizontal and vertical scrollbars meet */
+::-webkit-scrollbar-corner {
+    background: #f1f1f1; /* Color of the corner */
+}
+
+
+.Login-class {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 6px;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(https://www.scisports.com/wp-content/uploads/2020/10/Single-on-the-ball-player-highlights-background.jpg);
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.login img{
+
+    margin: 3px 0 0 0;
+    position: relative;
+    width: 16px;
+    height: 4px;
+    object-fit:cover;
+    zoom: 20;
+    z-index: 1000000;
+    
+}
+.login
+{
+   
+    position: relative;
+    width: 60vw;
+    max-height: 650px;
+    overflow-y: scroll;
+    border-radius: 15px;
+    min-width: 500px;
+    background-color: rgba(233, 222, 222, 0.582);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+/* .login .box {
+    rgb(108, 199, 241)ound-color: var(--clr);
+    
+
+  } */
+  /* .login .box:hover::before {
+    background: radial-gradient(var(--clr), transparent, transparent);
+  } */
+  
+/* .login .box::before{
+    content: '';
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: radial-gradient(var(--clr),transparent,transparent);
+    width: 300px;
+    height: 300px;
+    transition: 0.5s, top 0.1s,left 0.1s;
+}
+
+.login .box::after{
+    content: '';
+position: absolute;
+inset: 2px;
+background: rgba(243, 237, 237, 0.521);
+
+} */
+.input-class
+{
+    margin-top: -10%;
+    width: 100%;
+    height: 100%;
+    padding: 70px 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+}
+.input-class h2{
+    color: rgb(19, 9, 9);
+    font-size: 2em;
+    margin-bottom: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.input-class .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.input-class .inputBox input, .input-class .inputBox button{
+    width: 80%;
+    padding: 15px 15px;
+    outline: none;
+    border-radius: 10px;
+    border: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgb(89, 108, 116);
+    backdrop-filter: blur(10px);
+    color: rgba(33, 33, 240, 1);
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+.input-class .inputBox span{
+    position: absolute;
+    left: 30px;
+    font-size: 1em;
+    padding: 20px 25px;
+    color: rgba(0, 0, 0, 0.637);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.input-class .inputBox input:focus ~ span,
+.input-class .inputBox input:valid ~ span{
+    font-size: 0em;
+    color: black;
+    padding: 2px 5px;
+    border: transparent;
+}
+
+.input-class .inputBox button
+{
+    cursor: pointer;
+    font-size: 1.1em;
+    font-style:italic;
+    font-weight: bolder;
+    color: rgba(47, 33, 240, 0.869);
+    transition: 0.25s;
+    border:none;
+    background-color:  rgba(25, 172, 239, 0.435);
+
+}
+.input-class .inputBox button:hover{
+    border: none;
+}
+.input-class .about
+{
+
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.login h3{
+    margin-top: 1%;
+    font-size: 0.8em;
+    color: rgba(33, 33, 240, 0.931);
+}
+
+/* @media (max-width: 768px) {
+        .Login-class
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.966);
+
+}
+} */
+
+.input-class svg{
+    width: 20px;
+    height: 20px;
+}
+.login button.hidden{
+    cursor: pointer;
+    width: 70%;
+    height: 6%;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: rgba(33, 33, 240, 0.931);
+    transition: 0.25s;
+    border:none;
+    opacity: 1;
+    border-radius: 10%;
+    background-color:  rgba(25, 172, 239, 0.435);
+}
+
+.sign-in{
+    left: 0;
+    width: 65%;
+    z-index: 2;
+}
+
+.login.active .sign-in{
+    transform: translateX(45%);
+}
+
+.sign-up{
+    left: 0;
+    width: 65%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.login.active .sign-up{
+    transform: translateX(45%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+.login.active .sign-up img
+{
+    margin-top:  2px;
+}
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+.toggle-container h1{
+    color:  rgba(14, 108, 223);
+}
+.login.active .toggle-container{
+    transform: translateX(-235%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    height: 100%;
+    background: linear-gradient(to right, #134d258a, #02050170);
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.login.active .toggle{
+    transform: translateX(30%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-100%);
+    margin: 0 0 0 25%;
+}
+
+.login.active .toggle-left{
+    transform: translateX(0);
+    left: 0;
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.login.active .toggle-right{
+    transform: translateX(200%);
+}

@@ -1,0 +1,22 @@
+<div>
+    <h2>Upload and Trim Video</h2>
+    <input type="file" (change)="onFileSelected($event)">
+    <div *ngIf="videoSrc">
+      <video [src]="videoSrc" controls></video>
+    </div>
+    <div>
+      <label>Start Time (seconds):</label>
+      <input type="number" [(ngModel)]="startTime">
+    </div>
+    <div>
+      <label>Duration (seconds):</label>
+      <input type="number" [(ngModel)]="duration">
+    </div>
+    <button (click)="onTrim()" [disabled]="isProcessing">Trim Video</button>
+    <div *ngIf="isProcessing">Processing...</div>
+    <div *ngIf="trimmedVideoSrc">
+      <h3>Trimmed Video</h3>
+      <video [src]="trimmedVideoSrc" controls></video>
+    </div>
+  </div>
+  
